@@ -18,11 +18,7 @@ Terminator is a compact utility programmed in C#, designed to end processes that
 
 ### Proof of Concept 👁
 
-
-
-https://github.com/Chainski/Terminator/assets/96607632/0a4991a8-98e2-4ba9-85cd-95d6d7053da7
-
-
+https://github.com/Chainski/Terminator/assets/96607632/135842a2-e5f8-41b4-abbc-72b6bec5fdbd
 
 ### How it Works
 Terminator defines a method called ```UnProtectAndTerminate``` that aims to terminate a specified process after removing its protection. It utilizes platform invoke to call functions from system DLLs.
