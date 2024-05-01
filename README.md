@@ -16,8 +16,9 @@ Terminator is a compact utility programmed in C#, designed to end processes that
 - Download and the program from the [releases](https://github.com/Chainski/Terminator/releases).
 - Run ```Terminator.exe```
 
-Proof of Concept 👁
+### Proof of Concept 👁
 
+![Preview](https://github.com/Chainski/Terminator/assets/96607632/7ee45fd0-b1d2-49a3-9685-40107b3dd463)
 
 
 
