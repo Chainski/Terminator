@@ -1,3 +1,12 @@
+<p align= "center">
+  <img src="https://img.shields.io/github/languages/top/Chainski/Terminator?style=flat&color=red">
+   <img src="https://img.shields.io/github/stars/Chainski/Terminator?style=flat&color=red">
+     <img src="https://img.shields.io/github/last-commit/chainski/terminator?color=red">
+   <img src="https://img.shields.io/github/license/chainski/terminator?color=red">
+    <img src="https://hits.sh/github.com/chainski/terminator.svg?label=views&color=red">
+   <br>
+</p>
+
 <h1 align="center">Terminator</h1>
 
 <p align="center">
