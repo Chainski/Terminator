@@ -14,7 +14,7 @@
 </p>
 
 
-Terminator is a compact utility coded in C#, designed to end processes that have ```RtlSetProcessIsCritical``` activated see [bsod.cs](https://github.com/Chainski/Terminator/blob/main/bsod.cs)
+Terminator is a compact utility coded in C#, designed to end processes that have ```RtlSetProcessIsCritical``` enabled see [bsod.cs](https://github.com/Chainski/Terminator/blob/main/bsod.cs)
 
 ### Requirements
 - An administrator account.
