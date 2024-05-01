@@ -17,8 +17,7 @@
 Terminator is a compact utility programmed in C#, designed to end processes that have ```RtlSetProcessIsCritical``` activated see [bsod.cs](https://github.com/Chainski/Terminator/blob/main/bsod.cs)
 
 ### Requirements
-- An administrator account with UAC enabled.
-- UAC level is set to default.
+- An administrator account.
 - Tested on ```Windows 10.19045 (English) x64```
 
 ### Usage
