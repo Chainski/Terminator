@@ -18,7 +18,7 @@ Terminator is a compact utility coded in C#, designed to end processes that have
 
 ### Requirements
 - An administrator account.
-- Tested on ```Windows 10 (OS Build 19045.4355) Professional x64```
+- Tested on ```Windows 10, version 22H2 (19045.4355) amd64```
 
 ### Usage
 - Download the program from [releases](https://github.com/Chainski/Terminator/releases).
