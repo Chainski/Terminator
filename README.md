@@ -13,7 +13,6 @@
 <img src="https://github.com/Chainski/Terminator/assets/96607632/6deac6c5-9df1-4143-a8ab-9aecb811de34", width="200", height="200">
 </p>
 
-
 Terminator is a compact utility coded in C#, designed to end processes that have ```RtlSetProcessIsCritical``` enabled see [bsod.cs](https://github.com/Chainski/Terminator/blob/main/bsod.cs)
 
 ### Requirements
