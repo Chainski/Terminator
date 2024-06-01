@@ -14,14 +14,14 @@ namespace NTRaiseHardError
 
         public static void Main()
         {
-		  Console.ForegroundColor = ConsoleColor.Red;
-		  Console.WriteLine("[+] RtlSetProcessIsCritical is ENABLED, terminating this process will result in a BSOD");
+	  Console.ForegroundColor = ConsoleColor.Red;
+          Console.WriteLine("[+] RtlSetProcessIsCritical is ENABLED, terminating this process will result in a BSOD");
           Process.EnterDebugMode();
           RtlSetProcessIsCritical(1, 0, 0);
-		  while (true)
-		  {
-           Thread.Sleep(1); 
-		  }
+         while (true)
+	 {  
+	  Thread.Sleep(1); 
+         }
        }
     }
 }
