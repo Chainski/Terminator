@@ -11,15 +11,12 @@ public class Terminator
     public static void Main(string[] args)
     {   
 		string url = "https://github.com/chainski/terminator";
-
         string filePath = "github project.url";
-
         using (StreamWriter writer = new StreamWriter(filePath))
         {
             writer.WriteLine("[InternetShortcut]");
             writer.WriteLine("URL=" + url);
         }
-
         ShowBanner();
         Console.Write("[-] Enter the Process ID to terminate: ");
         string input = Console.ReadLine();
@@ -51,16 +48,11 @@ public class Terminator
             "                                 [made by chainski]                                \n" +
 			"                                   [version 1.0]                                   \n" +
             "                          [github.com/chainski/terminator]                         \n";
-
-        // Calculate padding for centering
         int padding = (Console.WindowWidth - bannerText.Split('\n')[0].Length) / 2;
-
-        // Print each line of the banner with padding
         foreach (string line in bannerText.Split('\n'))
         {
             Console.WriteLine(line.PadLeft(padding + line.Length));
         }
-
         Console.ResetColor();
     }
 
@@ -90,7 +82,7 @@ public class Terminator
             }
             else
             {
-				Console.ForegroundColor = ConsoleColor.Red;
+			    Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("[-] Failed to terminate the process.");
 				Thread.Sleep(6000);
             }
