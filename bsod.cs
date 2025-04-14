@@ -11,7 +11,6 @@ namespace NTRaiseHardError
     {
         [DllImport("ntdll.dll", SetLastError = true)]
         static extern void RtlSetProcessIsCritical(UInt32 v1, UInt32 v2, UInt32 v3);
-
         public static void Main()
         {
 	      Console.ForegroundColor = ConsoleColor.Red;
