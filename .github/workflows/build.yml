@@ -1,0 +1,53 @@
+name: Build Terminator
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build Terminator
+        run: msbuild Terminator.csproj /p:Configuration=Release /p:Platform=x64 /p:AllowUnsafeBlocks=true /p:Optimize=true /p:DebugType=none
+        working-directory: .
+
+      - name: List Build Directory
+        shell: pwsh
+        run: |
+          Write-Host "Listing contents of output directory"
+          Get-ChildItem -Recurse bin\x64\Release
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: Terminator
+          release_name: Terminator
+          body: "Release created by GitHub Actions"
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Asset
+        id: upload-release-asset-terminator
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: bin\x64\Release\Terminator.exe
+          asset_name: Terminator.exe
+          asset_content_type: application/octet-stream
