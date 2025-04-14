@@ -34,6 +34,14 @@ jobs:
           Write-Host "Listing contents of output directory"
           Get-ChildItem -Recurse bin\x64\Release
 
+      - name: Delete tag and release
+        uses: dev-drprasad/delete-tag-and-release@v1.1
+        with:
+          tag_name: Terminator
+          delete_release: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
